@@ -1,0 +1,3 @@
+   *.csv
+   !results/*.csv
+   .ipynb_checkpoints/

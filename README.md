@@ -50,7 +50,7 @@ See the docstring at the top of `src/data.py` for what `d` contains and a full e
 - Run both tasks: binary (`y_*_bin`, no SMOTE) and multiclass (`y_*_mc`, with SMOTE).
 - Work in your own notebook (e.g. `07a_<model>.ipynb`). Do not edit someone else's notebook,
   since Colab files on the shared Drive overwrite each other.
-- If you need a change in the data setup, ask Jesper instead of changing it locally.
+- If you need a change in the data setup, ask the me (Jesper) instead of changing it locally.
 
 ## Frozen data decisions
 

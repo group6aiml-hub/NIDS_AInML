@@ -57,7 +57,7 @@ See the docstring at the top of `src/data.py` for what `d` contains and a full e
 | Decision | Choice | Why / where |
 |---|---|---|
 | Duplicates | Removed from train (38.6 %), **kept** in test | Avoid leakage between train/val; test should look like real traffic. `02` |
-| Contradictory rows | Kept | 1 772 feature groups have more than one label: 7.9 % of all rows, concentrated in Analysis (75.3 %), Backdoor (73.7 %) and DoS (34.9 %). Limits achievable multiclass performance. 02`` |
+| Contradictory rows | Kept | 1 772 feature groups have more than one label: 7.9 % of all rows, concentrated in Analysis (75.3 %), Backdoor (73.7 %) and DoS (34.9 %). Limits achievable multiclass performance. `02` |
 | `id`, `is_ftp_login` | Dropped | `id` is a row number; `is_ftp_login` is identical to `ct_ftp_cmd` in train (not in test, see test checks in `02`). `02` |
 | Rare categories | `proto`/`service`/`state` values with < 100 rows → `other` | Counts from train only. `02` |
 | Split | 80/20, stratified on `attack_cat`, `random_state=42` | `src/data.py` |

@@ -6,7 +6,7 @@ Goal: detect network intrusions (binary: normal vs. attack) and classify attack 
 
 ## Team and responsibilities
 
-| Group memebr | Responsibility |
+| Group member | Responsibility |
 |---|---|
 | Jesper | Data cleaning, preprocessing, Exploratory data anlysis and feature engineering (`02`, `05`, `06`, `src/data.py`) |
 | Oliver | Model: <model from lectures> |
@@ -71,7 +71,7 @@ See the docstring at the top of `src/data.py` for what `d` contains and a full e
 |---|---|---|
 | `01_explore` | First look at the data | in repo |
 | `02_cleaning` | Cleaning, writes `train_clean.csv` / `test_clean.csv` | in repo |
-| `03_baseline` | Binary baseline | on Drive, not pushed yet |
+| `03_baseline` | Binary baseline | in repo |
 | `04_multiclass` | Multiclass baseline (Random Forest) | in repo |
 | `05_imbalance` | No action vs. class_weight vs. SMOTE vs. undersampling | in repo |
 | `06_feature_selection` | Correlation, mutual information, RF importance, top-k, with/without TTL | in repo |

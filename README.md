@@ -8,7 +8,7 @@ Goal: detect network intrusions (binary: normal vs. attack) and classify attack 
 
 | Group member | Responsibility |
 |---|---|
-| Jesper | Data cleaning, preprocessing, Exploratory data anlysis and feature engineering (`02`, `05`, `06`, `src/data.py`) |
+| Jesper | Data cleaning, preprocessing, Exploratory data analysis and feature engineering (`02`, `05`, `06`, `src/data.py`) |
 | Oliver | Model: <model from lectures> |
 | Hubert | Model: <second model> |
 | Valentino (+ Jesper) | Model of our own choice: <model> |
@@ -34,6 +34,7 @@ Stored in the group Google Drive under `MyDrive/Datasets/` (not in this repo).
 from google.colab import drive
 drive.mount('/content/drive')
 
+!pip install -q imbalanced-learn
 !git clone -q https://github.com/group6aiml-hub/NIDS_AInML.git
 import sys; sys.path.append('/content/NIDS_AInML/src')
 from data import last_data
@@ -56,8 +57,8 @@ See the docstring at the top of `src/data.py` for what `d` contains and a full e
 | Decision | Choice | Why / where |
 |---|---|---|
 | Duplicates | Removed from train (38.6 %), **kept** in test | Avoid leakage between train/val; test should look like real traffic. `02` |
-| Contradictory rows | Kept | 1 772 feature groups have more than one label (about 75 % of Analysis and 74 % of Backdoor rows). Limits achievable performance. `02` |
-| `id`, `is_ftp_login` | Dropped | `id` is a row number; `is_ftp_login` is identical to `ct_ftp_cmd`. `02` |
+| Contradictory rows | Kept | 1 772 feature groups have more than one label: 7.9 % of all rows, concentrated in Analysis (75.3 %), Backdoor (73.7 %) and DoS (34.9 %). Limits achievable multiclass performance. 02`` |
+| `id`, `is_ftp_login` | Dropped | `id` is a row number; `is_ftp_login` is identical to `ct_ftp_cmd` in train (not in test, see test checks in `02`). `02` |
 | Rare categories | `proto`/`service`/`state` values with < 100 rows → `other` | Counts from train only. `02` |
 | Split | 80/20, stratified on `attack_cat`, `random_state=42` | `src/data.py` |
 | Preprocessing | One-hot (3 categorical), log1p + StandardScaler (skewed, \|skew\| > 1), StandardScaler (rest) | Fitted on the training part only. `04`, `src/data.py` |

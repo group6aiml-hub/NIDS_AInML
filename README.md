@@ -8,7 +8,7 @@ Goal: detect network intrusions (binary: normal vs. attack) and classify attack 
 
 | Group memebr | Responsibility |
 |---|---|
-| Jesper | Data cleaning, preprocessing, feature engineering (`02`, `05`, `06`, `src/data.py`) |
+| Jesper | Data cleaning, preprocessing, Exploratory data anlysis and feature engineering (`02`, `05`, `06`, `src/data.py`) |
 | Oliver | Model: <model from lectures> |
 | Hubert | Model: <second model> |
 | Valentino (+ Jesper) | Model of our own choice: <model> |

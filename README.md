@@ -63,7 +63,7 @@ See the docstring at the top of `src/data.py` for what `d` contains and a full e
 | Preprocessing | One-hot (3 categorical), log1p + StandardScaler (skewed, \|skew\| > 1), StandardScaler (rest) | Fitted on the training part only. `04`, `src/data.py` |
 | Class imbalance | SMOTE: Worms/Shellcode/Backdoor/Analysis → 3000, DoS → 5000 (multiclass only) | Best of four methods, but small effect. `05` |
 | Features | All 41 (`FEATURES = None` in `src/data.py`) | Dropping the 5 near-duplicates (corr > 0.95) gave the same macro-F1 (0.573 vs 0.572); top-k differences were within noise. Kept all 41 so the baselines in `07` stay comparable. `06`  |
-| TTL features | Kept (`sttl`, `dttl`, `ct_state_ttl`) | Without TTL: binary unchanged (0.932 → 0.933), multiclass −0.02. The model does not depend on TTL. `06` | Removing them barely changes results. `06` |
+| TTL features | Kept (`sttl`, `dttl`, `ct_state_ttl`) | Without TTL: binary unchanged (0.932 → 0.933), multiclass −0.02. The model does not depend on TTL. `06` | 
 
 ## Notebooks (run order)
 
@@ -75,7 +75,7 @@ See the docstring at the top of `src/data.py` for what `d` contains and a full e
 | `04_multiclass` | Multiclass baseline (Random Forest) | in repo |
 | `05_imbalance` | No action vs. class_weight vs. SMOTE vs. undersampling | in repo |
 | `06_feature_selection` | Correlation, mutual information, RF importance, top-k, with/without TTL | in repo |
-| `07_models` | Shared model comparison (LogReg, RF, XGBoost) | in repo |
+| `07_baselinecomparison` | Shared model comparison (LogReg, RF, XGBoost) | in repo |
 | `07a`, `07b`, ... | Individual model notebooks | planned |
 | `08_final_test` | Final model trained on all of train, evaluated once on test | planned (last step) |
 

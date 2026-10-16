@@ -75,7 +75,7 @@ See the docstring at the top of `src/data.py` for what `d` contains and a full e
 | `04_multiclass` | Multiclass baseline (Random Forest) | in repo |
 | `05_imbalance` | No action vs. class_weight vs. SMOTE vs. undersampling | in repo |
 | `06_feature_selection` | Correlation, mutual information, RF importance, top-k, with/without TTL | in repo |
-| `07_models` | Shared model comparison (LogReg, RF, XGBoost) | on Drive, not pushed yet |
+| `07_models` | Shared model comparison (LogReg, RF, XGBoost) | in repo |
 | `07a`, `07b`, ... | Individual model notebooks | planned |
 | `08_final_test` | Final model trained on all of train, evaluated once on test | planned (last step) |
 

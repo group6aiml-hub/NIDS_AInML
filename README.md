@@ -12,7 +12,7 @@ Goal: detect network intrusions (binary: normal vs. attack) and classify attack 
 | Oliver | Model: <model from lectures> Random Forest (`07_random_forest`)|
 | Hubert | Model: <second model> Neural Network (`07_Neural_Network`)|
 | Valentino (+ Jesper) | Model of our own choice: <model> Gradient Boosting (`07_gradient_boosting`)|
-| Victoria | Evaluation, comparison and report (`07_model_evaluation`, `07_final_test`)|
+| Victoria | Evaluation, comparison and report (`07_model_evaluation`, `08_final_test`)|
 
 ## Data
 

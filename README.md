@@ -9,10 +9,10 @@ Goal: detect network intrusions (binary: normal vs. attack) and classify attack 
 | Group member | Responsibility |
 |---|---|
 | Jesper | Data cleaning, preprocessing, Exploratory data analysis and feature engineering (`02`, `05`, `06`, `src/data.py`) |
-| Oliver | Model: <model from lectures> Random Forest ('07_random_forest')|
-| Hubert | Model: <second model> Neural Network ('07_Neural_Network')|
-| Valentino (+ Jesper) | Model of our own choice: <model> Gradient Boosting ('07_gradient_boosting')|
-| Victoria | Evaluation, comparison and report ('07_model_evaluation', '07_final_test')|
+| Oliver | Model: <model from lectures> Random Forest (`07_random_forest`)|
+| Hubert | Model: <second model> Neural Network (`07_Neural_Network`)|
+| Valentino (+ Jesper) | Model of our own choice: <model> Gradient Boosting (`07_gradient_boosting`)|
+| Victoria | Evaluation, comparison and report (`07_model_evaluation`, `07_final_test`)|
 
 ## Data
 
